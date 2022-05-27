@@ -47,10 +47,6 @@ class Game:
         enemy_2 = EnemyCharacter('D:\Program\TUBES\musuh3.png', 20, 50, 50, 50)
         enemy_2.SPEED *= level_speed
 
-        #coin1 = Coins('D:\Program\TUBES\coins0.png', 300, 200, 16, 16)
-        #coin2 = Coins('D:\Program\TUBES\coins0.png', 500, 250, 16, 16)
-        #coin3 = Coins('D:\Program\TUBES\coins0.png', 600, 500, 16, 16)
-
         OnePiece = GameObject('D:\Program\TUBES\onepiece.png', 375, 50, 50, 50)
 
         # Main game loop, digunakan untuk update semua gameplay seperti movement, checks, dan graphic
@@ -84,9 +80,6 @@ class Game:
             self.game_screen.blit(self.image, (0, 0))
 
             OnePiece.draw(self.game_screen)
-            #coin1.draw(self.game_screen)
-            #coin2.draw(self.game_screen)
-            #coin3.draw(self.game_screen)
             player_character.move(direction, self.height)
             player_character.draw(self.game_screen)
 
@@ -135,14 +128,6 @@ class Game:
                 pygame.display.update()
                 clock.tick(1)
                 break
-            #elif player_character.detection_collision(coin1):
-            #    del coin1
-            #    score += 1
-            #    text = font.render(score, True, BLACK_COLOR)
-            #    self.game_screen.blit(text, (20, 700))
-            #    pygame.display.update()
-
-            
 
             pygame.display.update()
             clock.tick(self.TICK_RATE)
@@ -166,20 +151,6 @@ class GameObject:
 
     def draw(self, background):
         background.blit(self.image, (self.x_pos, self.y_pos))
-
-#class Coins:
-#    def __init__(self, image_path, x, y, width, height):
-#        self.x_pos = x
-#        self.y_pos = y
-#
-#        self.width = width
-#        self.height = height
-#
-#        object_image = pygame.image.load(image_path)
-#        self.image = pygame.transform.scale(object_image, (width, height))
-#
-#    def draw(self, background):
-#        background.blit(self.image, (self.x_pos, self.y_pos))
 
 # Class to represent the character contolled by the player
 class PlayerCharacter(GameObject):
