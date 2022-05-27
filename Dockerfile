@@ -30,4 +30,5 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     libsdl2-net-dev
 RUN apt install -qqy x11-apps
 
+
 RUN pip3 install pygame
