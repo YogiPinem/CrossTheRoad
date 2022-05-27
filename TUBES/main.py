@@ -8,7 +8,7 @@ SCREEN_TITLE = 'Cross The Road'
 
 WHITE_COLOR = (255, 255, 255)
 BLACK_COLOR = (0, 0, 0)
-
+pygame.init()
 clock = pygame.time.Clock()
 pygame.font.init()
 font = pygame.font.SysFont('ComicSans', 75)
@@ -34,20 +34,20 @@ class Game:
         did_win = False
         direction = 0
 
-        player_character = PlayerCharacter('TUBES\pemain.png', 375, 700, 50, 50)
-        enemy_0 = EnemyCharacter('TUBES\musuh1.png', 20, 600, 50, 50)
+        player_character = PlayerCharacter('pemain.png', 375, 700, 50, 50)
+        enemy_0 = EnemyCharacter('musuh1.png', 20, 600, 50, 50)
         # Kecepatan naik ketika telah mencapai Goal
         enemy_0.SPEED *= level_speed
 
         # Membuat musuh baru
-        enemy_1 = EnemyCharacter('TUBES\musuh2.png', self.width - 40, 400, 50, 50)
+        enemy_1 = EnemyCharacter('musuh2.png', self.width - 40, 400, 50, 50)
         enemy_1.SPEED *= level_speed
 
         # Membuat musuh baru
-        enemy_2 = EnemyCharacter('TUBES\musuh3.png', 20, 50, 50, 50)
+        enemy_2 = EnemyCharacter('musuh3.png', 20, 50, 50, 50)
         enemy_2.SPEED *= level_speed
 
-        OnePiece = GameObject('TUBES\onepiece.png', 375, 50, 50, 50)
+        OnePiece = GameObject('onepiece.png', 375, 50, 50, 50)
 
         # Main game loop, digunakan untuk update semua gameplay seperti movement, checks, dan graphic
         # Berjalan sampai is_game_over = True
@@ -74,7 +74,7 @@ class Game:
                     # Gerakan player berhenti
                     if event.key == pygame.K_UP or event.key == pygame.K_DOWN or event.key == pygame.K_RIGHT or event.key == pygame.K_LEFT:
                         direction = 0
-                print(event)
+                # print(event)
 
             self.game_screen.fill(WHITE_COLOR)
             self.game_screen.blit(self.image, (0, 0))
@@ -207,7 +207,7 @@ class EnemyCharacter(GameObject):
 
 
 pygame.init()
-new_game = Game('TUBES\latar.png', SCREEN_TITLE, SCREEN_WIDTH, SCREEN_HEIGHT)
+new_game = Game('latar.png', SCREEN_TITLE, SCREEN_WIDTH, SCREEN_HEIGHT)
 new_game.run_game_loop(1)
 
 #keluar dari program
