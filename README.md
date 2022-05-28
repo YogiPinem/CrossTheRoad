@@ -20,7 +20,7 @@ Aplikasi ini merupakan permainan yang dibuat menggunakan library pygame yang ber
 
 ## Cara Menjalankan Docker Container
 
-Langkah pertama RUN DOCKER, Lalu NYALAKAN XLauch setelah XLauch menyala Masuk ke-Program. 
+Langkah pertama RUN DOCKER, Lalu menyalakan XLauch. setelah XLauch menyala lalu Masuk ke-Programnya. 
 #BUILD DOCKER IMAGE, dengan perintah
 ```
 docker build -t docker-game .
