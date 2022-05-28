@@ -19,8 +19,9 @@
 Aplikasi ini merupakan permainan yang dibuat menggunakan library pygame yang bertujuan untuk mencapai kotak harta karun dengan menghindari musuh musuh yang menghalangi jalan. Pada setiap kali pemain berhasil mencapai kotak harta karun maka kesulitan permainan akan berubah setiap kali pemain berhasil mendapatkan kotak harta karun.
 
 
-Langkah pertama RUN DOCKER 
-Lalu NYALAKAN XLauch 
+1.Langkah pertama RUN DOCKER 
+2. Lalu NYALAKAN XLauch 
+3. Masuk ke-Program
 #BUILD DOCKER IMAGE
 ```
 docker build -t docker-game .
