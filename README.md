@@ -1,5 +1,24 @@
 # Cross The Road
 
+## Daftar Anggota
+
+| Nama          | NIM       |  Github                                                 |
+| ------------- | ----------|---------------------------------------------------|
+| Yogi Immanuel Pinem | 120140011 | YogiPinem |
+| Jody Fabian Lingga | 120140035 | JodyFabianLingga-120140035 | 
+| Tegar Abimanyu | 120140112 | TegarAbimanyu |
+| Raja Josua Simanungkalit | 120140134 | RajaJosuaS |
+| Daniel Albertus Turnip | 120140140 | DanielTurnip |
+| M.Rafif | 120140148 |RafiifMhd|
+
+
+## Cross The Road
+
+|Cross The Road
+
+Aplikasi ini merupakan permainan yang dibuat menggunakan library pygame yang bertujuan untuk mencapai kotak harta karun dengan menghindari musuh musuh yang menghalangi jalan. Pada setiap kali pemain berhasil mencapai kotak harta karun maka kesulitan permainan akan berubah setiap kali pemain berhasil mendapatkan kotak harta karun.
+
+
 #RUN DOCKER
 #NYALAKAN XLauch
 #BUILD DOCKER IMAGE
