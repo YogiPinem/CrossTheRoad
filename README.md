@@ -20,24 +20,25 @@ Aplikasi ini merupakan permainan yang dibuat menggunakan library pygame yang ber
 
 
 Langkah pertama RUN DOCKER, Lalu NYALAKAN XLauch setelah XLauch menyala Masuk ke-Program. 
-#BUILD DOCKER IMAGE
+#BUILD DOCKER IMAGE, dengan perintah
 ```
 docker build -t docker-game .
 ```
-
-#RUN DOCKER CONTAINER
+Selanjutnya 
+#RUN DOCKER CONTAINER dengan perintah 
 ```
 docker run --rm -it -e DISPLAY=192.168.1.49:0.0 -v D:\jodi\Hands-On-4:/usr/project docker-game /bin/bash
 ```
-
 Note:
 1. ganti ip address sesuai ip kalian
 2. ganti D:\jodi\Hands-On-4 sesuai lokasi main.py
 
-#RUN GAME DI CONTAINER
+Langkah Terakhir
+#RUN GAME DI CONTAINER dengan perintah
 ```
 python main.py
 ```
 ## VIDEO DEMO CONTAINER
 [![TEKAN GAMBAR UNTUK MENAMPILKAN VIDEO](https://img.youtube.com/vi/WwipZp0RXro/0.jpg)](https://www.youtube.com/watch?v=WwipZp0RXro)
 
+# KLIK GAMBAR UNTUK MENAMPILKAN VIDEO
